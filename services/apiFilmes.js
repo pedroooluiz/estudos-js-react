@@ -1,4 +1,4 @@
-import token from "@/configTolken";
+import token from "@/configToken";
 import axios from "axios";
 
 const apiFilmes = axios.create({
@@ -7,5 +7,7 @@ const apiFilmes = axios.create({
         Authorization: 'Bearer ' + token
     }
 })
+
+//entrar em configToken e colocar como .js
 
 export default apiFilmes
